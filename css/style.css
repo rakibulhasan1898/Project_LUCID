@@ -1,0 +1,749 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    min-height: 100vh;
+    background-image: url("../images/fabian-albert-iiPOd73iCUQ-unsplash.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.navigation {
+    text-transform: capitalize;
+    position: relative;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0px !important;
+}
+
+.navigation::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(to right, rgb(30, 87, 153) 0%, rgb(89, 148, 202) 62%, rgba(95, 154, 207, 0.7) 68%, rgba(125, 185, 232, 0) 100%);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.navigation:hover::before {
+    width: 100%;
+}
+
+.navigation-list-item {
+    margin-left: 24px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.left-content {
+    color: rgb(255, 255, 255);
+}
+
+.left-content h5 {
+    color: rgb(0, 142, 214);
+    text-transform: uppercase;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.left-content h1 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    padding: 15px 0px 0px;
+}
+
+.left-content p {
+    font-family: "Source Sans 3", sans-serif;
+    color: rgb(153, 153, 153);
+    font-size: 16px;
+    padding: 10px 0px 0px;
+}
+
+.button-part {
+    display: flex;
+    margin: 40px 0px 0px;
+}
+
+.download-now-btn {
+    margin-right: 25px;
+}
+
+.download-now-btn a {
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 10px 20px;
+    background-color: rgb(0, 142, 214);
+    border: 1px solid rgb(0, 142, 214);
+    border-radius: 2px;
+    transition: all 0.4s ease-in-out 0s;
+    text-transform: uppercase;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 700;
+}
+
+.download-now-btn a:hover {
+    background: transparent;
+    border: 1px solid rgb(153, 153, 153);
+}
+
+.view-features-btn {
+}
+
+.view-features-btn a {
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(153, 153, 153);
+    margin: 0px;
+    padding: 10px 20px;
+    font-family: "Source Sans 3", sans-serif;
+    border-radius: 2px;
+    font-weight: 700;
+    transition: all 0.4s ease-in-out 0s;
+    text-transform: uppercase;
+}
+
+.view-features-btn a:hover {
+    background-color: rgb(0, 142, 214);
+}
+
+.hero-contents {
+    min-height: 90vh;
+    align-items: center;
+}
+
+.hero_image {
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+    width: 35%;
+}
+
+.feature_section {
+    padding: 70px 0px;
+    border-bottom: 1px solid rgba(225, 225, 225, 0.59);
+}
+
+.global_title_design {
+    text-align: center;
+}
+
+.global_title_design h5 {
+    color: rgb(0, 142, 214);
+    text-transform: uppercase;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.global_title_design h3 {
+    font-size: 36px;
+    text-transform: capitalize;
+    padding: 10px 0px;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    color: rgb(26, 26, 26);
+}
+
+.global_title_design span {
+    width: 50px;
+    height: 3px;
+    display: block;
+    margin: 10px auto;
+    position: relative;
+}
+
+.global_title_design span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background: rgb(0, 142, 214);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.global_title_design span::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background: rgb(0, 142, 214);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.feature_section:hover .global_title_design span::before, .product_deatils_section:hover .global_title_design span::before, .customize_section:hover .global_title_design span::before, .testimonial_section:hover .global_title_design span::before, .pricing_section:hover .global_title_design span::before, .contact_us_section:hover .global_title_design span::before {
+    width: 48%;
+}
+
+.feature_section:hover .global_title_design span::after, .product_deatils_section:hover .global_title_design span::after, .customize_section:hover .global_title_design span::after, .testimonial_section:hover .global_title_design span::after, .pricing_section:hover .global_title_design span::after, .contact_us_section:hover .global_title_design span::after {
+    width: 48%;
+}
+
+.icon_part {
+    padding: 25px;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    border-radius: 50%;
+    margin: auto;
+    border: 1px solid rgb(225, 225, 225);
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.icon i {
+    color: rgb(0, 142, 214);
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.contents {
+    text-align: center;
+}
+
+.contents h3 {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 500;
+    padding: 15px 0px;
+    font-size: 25px;
+    transition: all 0.4s ease-in-out 0s;
+    text-transform: capitalize;
+    color: rgb(26, 26, 26);
+}
+
+.contents p {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: all 0.4s ease-in-out 0s;
+    color: rgb(153, 153, 153);
+}
+
+.icon_part:hover .icon {
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+.icon_part:hover .icon i {
+    color: rgb(0, 142, 214);
+}
+
+.icon_part:hover {
+    background-color: rgb(0, 142, 214);
+    border-radius: 5px;
+}
+
+.icon_part:hover .contents h3 {
+    color: rgb(255, 255, 255);
+}
+
+.icon_part:hover .contents p {
+    color: rgb(255, 255, 255);
+}
+
+.product_deatils_section {
+    padding: 70px 0px;
+}
+
+.product_iphone {
+    width: 100%;
+}
+
+.product_iphone img {
+    width: 83%;
+}
+
+.head_contents {
+    padding-top: 50px;
+}
+
+.product_deatils_section .global_title_design {
+    text-align: left;
+}
+
+.product_deatils_section .global_title_design span {
+    margin: 0px;
+}
+
+.head_contents p {
+    padding: 15px 0px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Source Sans 3", sans-serif;
+    color: rgb(153, 153, 153);
+    line-height: 27px;
+}
+
+.feature_listing {
+    display: flex;
+}
+
+.feature_listing ul {
+    list-style: none;
+}
+
+.feature_listing ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.feature_icon {
+    width: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.feature_icon i {
+    font-size: 18px;
+    color: rgb(0, 142, 214);
+}
+
+.feature_content {
+}
+
+.feature_content p {
+    padding: 0px;
+    color: rgb(27, 27, 27);
+    font-size: 16px;
+}
+
+.customize_section {
+    background-color: rgb(242, 242, 242);
+    padding: 60px 0px;
+}
+
+.customize-flex {
+    align-items: center;
+    min-height: 10vh;
+    display: flex;
+}
+
+.customize_section .global_title_design {
+    text-align: left;
+}
+
+.customize_section span {
+    margin: 0px;
+}
+
+.customize_section p {
+    color: rgb(153, 153, 153);
+    font-size: 16px;
+    margin-top: 18px;
+}
+
+.customize_image {
+    width: 90%;
+}
+
+.customize_image img {
+    width: 90%;
+}
+
+.customized-image-flex {
+    display: flex;
+    justify-content: end;
+}
+
+.testimonial_section {
+    padding: 70px 0px;
+    background-image: url("../images/client-seciton-bg.jpg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.testimonial_section::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.testimonial_section h3 {
+    color: rgb(255, 255, 255);
+}
+
+.client_message {
+}
+
+.client_message p {
+    color: rgb(255, 255, 255);
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.client_info {
+    display: flex;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.client_image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.client_image img {
+    width: 100%;
+}
+
+.client_details {
+    color: rgb(255, 255, 255);
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.client_details h5 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.client_details p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.theme_download_section {
+    background-color: rgb(21, 20, 26);
+    padding: 15px 0px;
+}
+
+.parent_section {
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.theme_download_section .button-part {
+    display: flex;
+    margin: 0px;
+    justify-content: end;
+}
+
+.theme_download_section .view-features-btn {
+    margin-right: 20px;
+}
+
+.theme_download_section .view-features-btn:hover, .theme_download_section .download-now-btn:hover {
+    color: rgb(255, 255, 255);
+}
+
+.parent_section h3 {
+    font-size: 28px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.parent_section h3 strong {
+    font-weight: 500;
+}
+
+.pricing_section {
+    padding: 70px 0px;
+}
+
+.price_plans {
+    border: 1px solid rgb(224, 224, 224);
+}
+
+.price_head {
+    padding: 16px 0px;
+}
+
+.price_head h4 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out 0s;
+    font-weight: 700;
+}
+
+.actual_price {
+    padding: 29px 0px;
+    border-top: 1px solid rgb(224, 224, 224);
+    border-bottom: 1px solid rgb(224, 224, 224);
+    font-family: "Source Sans 3", sans-serif;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.actual_price h3 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.actual_price h3 sup {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    vertical-align: super;
+}
+
+.actual_price p {
+    text-align: center;
+    color: rgb(153, 153, 153);
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.plan_description {
+    padding: 17px 30px;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.plan_description p {
+    text-align: center;
+    color: rgb(153, 153, 153);
+    font-weight: 400;
+}
+
+.order_now_btn {
+    margin: auto;
+    width: 50%;
+    padding: 15px 0px;
+}
+
+.order_now_btn a {
+    margin: 0px;
+    padding: 12px 25px;
+    background-color: transparent;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 2px;
+    transition: all 0.4s ease-in-out 0s;
+    text-transform: uppercase;
+    font-family: "Source Sans 3", sans-serif;
+    color: rgb(0, 142, 214);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.price_plans:hover .price_head h4 {
+    color: rgb(0, 142, 214);
+}
+
+.price_plans:hover .actual_price {
+    background-color: rgb(0, 142, 214);
+    color: rgb(255, 255, 255);
+}
+
+.price_plans:hover .actual_price p {
+    color: rgb(255, 255, 255);
+}
+
+.price_plans:hover .order_now_btn a {
+    background-color: rgb(0, 142, 214);
+    color: rgb(255, 255, 255);
+}
+
+.plan_description p span {
+    color: rgb(0, 142, 214);
+}
+
+.contact_us_section {
+    padding: 70px 0px 280px;
+    background-color: rgb(237, 237, 237);
+    position: relative;
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    margin: auto auto 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 142, 214);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.contact-icon i {
+}
+
+.contact-icon ~ p {
+    text-align: center;
+    color: rgb(153, 153, 153);
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.user_form {
+    background: rgb(21, 20, 26);
+    width: 50%;
+    padding: 30px 40px;
+    margin: auto;
+    border-radius: 0px;
+    box-shadow: rgba(0, 0, 0, 0.063) 0px 3px 7px 2px;
+}
+
+.user_form form {
+    display: flex;
+}
+
+.user_form form input {
+    width: 90%;
+    padding: 10px 0px 10px 5px;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    border-bottom: 1px solid rgba(165, 165, 165, 0.37);
+    color: white;
+    margin-bottom: 16px;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.user_form form input[type="submit"] {
+    color: rgb(255, 255, 255);
+    margin: 7px 0px 0px auto;
+    padding: 10px;
+    background-color: rgb(0, 142, 214);
+    border: 1px solid rgb(0, 142, 214);
+    border-radius: 2px;
+    transition: all 0.4s ease-in-out 0s;
+    text-transform: uppercase;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    width: 40%;
+    font-size: 14px;
+    display: block;
+}
+
+.user_form form input[type="submit"]:hover {
+    background-color: rgb(4, 111, 165);
+    
+}
+
+.user_form form textarea {
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    background-color: transparent;
+    border: 1px solid rgba(165, 165, 165, 0.37);
+    font-family: "Source Sans 3", sans-serif;
+    color: #fff;
+}
+
+.user_form form input:focus, .user_form form textarea {
+    outline: none;
+}
+
+.user_form form input::placeholder, .user_form form textarea::placeholder {
+    color: #fff;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 15px;
+}
+
+.google_maps {
+    line-height: 0;
+}
+
+.user_form {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer {
+    background-color: rgb(21, 20, 26);
+    padding: 10px 0px;
+}
+
+.social-media-links {
+    width: 30%;
+    margin: 14px auto;
+}
+
+.social-media-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social-media-links ul li {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-links ul li a {
+    color: rgb(68, 67, 72);
+    transition: all 0.2s ease-in-out 0s;
+    font-size: 18px;
+}
+
+.social-media-links ul li:hover a {
+    color: rgb(0, 142, 214);
+}
+
+.custom-copyright {
+}
+
+.custom-copyright p {
+    color: rgb(68, 67, 72);
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
